@@ -42,14 +42,16 @@
   <table class="table-auto text-2xl">
     <thead>
       <tr>
+        <th class="text-left">S. no</th>
         <th class="text-left">Date</th>
         <th class="text-left">Day</th>
         <th class="text-left">Time</th>
       </tr>
     </thead>
     <tbody>
-      <% posts.forEach(function(post){ %>
+      <% posts.forEach(function(post,index){ %>
       <tr>
+        <td><%= index+1 %></td>
         <td><%= post.date %></td>
         <td><%= post.day %></td>
         <td><%= post.time %></td>
